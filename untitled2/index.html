@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我在肥城有颗桃树 | 专属溯源档案</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Microsoft Yahei", sans-serif;
+    }
+    body {
+      background: #fff8f5;
+      background-image: url('https://img0.baidu.com/it/u=1234567890,1234567890&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=1200');
+      background-size: cover;
+      background-attachment: fixed;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 480px;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.92);
+      min-height: 100vh;
+      box-shadow: 0 0 15px rgba(255,120,80,0.15);
+    }
+    /* 顶部标题区 */
+    .header {
+      text-align: center;
+      padding: 25px 15px;
+      background: linear-gradient(135deg, #ff9a8b 0%, #ffd6a5 100%);
+      color: #fff;
+    }
+    .header h1 {
+      font-size: 28px;
+      font-weight: bold;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    /* 桃树编号卡片 */
+    .tree-card {
+      padding: 20px 15px;
+      text-align: center;
+    }
+    .tree-img {
+      width: 180px;
+      height: 180px;
+      margin: 0 auto 15px;
+      border-radius: 50%;
+      border: 4px solid #ffb396;
+      overflow: hidden;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .tree-img img {
+      width: 90%;
+      height: 90%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .tree-no {
+      font-size: 24px;
+      font-weight: bold;
+      color: #d8572a;
+      margin-bottom: 8px;
+    }
+    .tree-no span {
+      display: inline-block;
+      padding: 6px 30px;
+      background: linear-gradient(90deg, #ff7e5f, #feb47b);
+      color: #fff;
+      border-radius: 30px;
+      font-size: 20px;
+    }
+    /* 通用模块标题 */
+    .mod-title {
+      background: linear-gradient(90deg, #ff7e5f, #feb47b);
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 12px 20px;
+      margin: 20px 15px 10px;
+      border-radius: 8px;
+    }
+    /* 产品信息表格 */
+    .info-table {
+      margin: 0 15px 20px;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(255,120,80,0.1);
+    }
+    .info-item {
+      display: flex;
+      padding: 12px 15px;
+      border-bottom: 1px solid #f5e9e4;
+    }
+    .info-item:last-child {
+      border-bottom: none;
+    }
+    .info-label {
+      width: 110px;
+      color: #666;
+      font-weight: 500;
+    }
+    .info-value {
+      flex: 1;
+      color: #333;
+    }
+    /* 认证模块 */
+    .cert-list {
+      margin: 0 15px 20px;
+    }
+    .cert-item {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      border-left: 5px solid #ff7e5f;
+      box-shadow: 0 2px 8px rgba(255,120,80,0.1);
+      font-size: 17px;
+      color: #333;
+    }
+    /* 实时直播 */
+    .live-box {
+      margin: 0 15px 20px;
+      background: #fff;
+      border: 2px solid #ffb396;
+      border-radius: 8px;
+      padding: 15px;
+    }
+    .live-text {
+      font-size: 17px;
+      color: #333;
+      line-height: 1.8;
+    }
+    /* 生长档案时间线 */
+    .timeline {
+      margin: 0 15px 40px;
+      padding-left: 25px;
+      border-left: 3px solid #ffb396;
+    }
+    .timeline-item {
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .timeline-item::before {
+      content: '';
+      width: 12px;
+      height: 12px;
+      background: #ff7e5f;
+      border-radius: 50%;
+      position: absolute;
+      left: -31px;
+      top: 3px;
+    }
+    .timeline-date {
+      font-size: 14px;
+      color: #999;
+      margin-bottom: 8px;
+    }
+    .timeline-img {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+    .timeline-img img {
+      width: 48%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .timeline-desc {
+      font-size: 16px;
+      color: #444;
+    }
+    /* 底部备注 */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      color: #999;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <!-- 顶部标题 -->
+  <div class="header">
+    <h1>我在肥城有颗桃树</h1>
+  </div>
+
+  <!-- 桃树编号卡片 -->
+  <div class="tree-card">
+    <div class="tree-img">
+
+      <img src="image/微信图片_20260519232007.jpg" height="1280" width="1280" alt="肥城桃子"/>
+    </div>
+    <div class="tree-no">桃树编号 <span>LY-135</span></div>
+  </div>
+
+  <!-- 产品信息模块 -->
+  <div class="mod-title">产品信息</div>
+  <div class="info-table">
+    <div class="info-item">
+      <div class="info-label">生产批次</div>
+      <div class="info-value">20230614-01</div>
+    </div>
+    <div class="info-item">
+      <div class="info-label">品名</div>
+      <div class="info-value">肥城桃</div>
+    </div>
+    <div class="info-item">
+      <div class="info-label">品种</div>
+      <div class="info-value">肥桃</div>
+    </div>
+    <div class="info-item">
+      <div class="info-label">生产日期</div>
+      <div class="info-value">--</div>
+    </div>
+    <div class="info-item">
+      <div class="info-label">品级</div>
+      <div class="info-value">优等品</div>
+    </div>
+    <div class="info-item">
+      <div class="info-label">保质期</div>
+      <div class="info-value">30天</div>
+    </div>
+    <div class="info-item">
+      <div class="info-label">储藏方式</div>
+      <div class="info-value">避光储藏</div>
+    </div>
+    <div class="info-item">
+      <div class="info-label">查询次数</div>
+      <div class="info-value">10</div>
+    </div>
+  </div>
+
+  <!-- 权威检测/认证模块 -->
+  <div class="mod-title">权威检测</div>
+  <div class="cert-list">
+    <div class="cert-item">✅ 绿色农产品认证</div>
+    <div class="cert-item">✅ SGS权威农残检测合格</div>
+  </div>
+
+  <!-- 实时直播模块 -->
+  <div class="mod-title">实时直播</div>
+  <div class="live-box">
+    <div class="live-text">
+      肥城桃基地<br>
+      135#桃树 专属生长直播通道
+    </div>
+  </div>
+
+  <!-- 生长档案模块 -->
+  <div class="mod-title">生长档案</div>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-date">02-01 06:00</div>
+      <div class="timeline-img">
+        <img src="image/微信图片_20260519230947.jpg" height="1920" width="1440"alt="栽苗"/>
+        <img src="image/微信图片_20260519231001.jpg" height="1706" width="1279" alt="基地"/>
+      </div>
+      <div class="timeline-desc">桃树栽苗定植，扎根肥城沃土</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">生长中期</div>
+      <div class="timeline-img">
+        <img src="image/微信图片_20260519230958.jpg" alt="桃花">
+      </div>
+      <div class="timeline-desc">桃花初开，长势不错。花期管理安排到位，坐等后面挂果！</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">生长后期</div>
+      <div class="timeline-img">
+        <img src="image/微信图片_20260519220648.jpg" alt="桃花">
+      </div>
+      <div class="timeline-desc">给桃树套上保护袋，精心呵护，成熟后绝对红润饱满！</div>
+    </div>
+  </div>
+
+  <!-- 底部备注 -->
+  <div class="footer">
+    肥城桃专属溯源档案 · 全程自然生长 · 无添加原生态
+  </div>
+</div>
+</body>
+</html>
